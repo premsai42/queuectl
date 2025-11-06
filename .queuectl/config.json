@@ -1,0 +1,6 @@
+{
+  "max_retries" : 3,
+  "backoff_base" : 2,
+  "job_timeout_sec" : 60,
+  "heartbeat_sec" : 5
+}

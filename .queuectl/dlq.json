@@ -1,0 +1,37 @@
+[ {
+  "id" : "job1",
+  "command" : "sleep 2",
+  "state" : "dead",
+  "attempts" : 3,
+  "priority" : 0,
+  "max_retries" : 3,
+  "created_at" : "2025-11-06T07:52:50.759844400Z",
+  "updated_at" : "2025-11-06T07:53:13.834370700Z",
+  "run_at" : "2025-11-06T07:53:13.773976900Z",
+  "last_error" : "exit=1\n'sleep' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n",
+  "worker_id" : "w-8bc4cfa1"
+}, {
+  "id" : "job2",
+  "command" : "sleep 2",
+  "state" : "dead",
+  "attempts" : 3,
+  "priority" : 0,
+  "max_retries" : 3,
+  "created_at" : "2025-11-06T08:00:43.855231200Z",
+  "updated_at" : "2025-11-06T08:01:00.910218100Z",
+  "run_at" : "2025-11-06T08:01:00.791372800Z",
+  "last_error" : "exit=1\n'sleep' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n",
+  "worker_id" : "w-3b38c87d"
+}, {
+  "id" : "job4",
+  "command" : "sleep 2",
+  "state" : "dead",
+  "attempts" : 3,
+  "priority" : 0,
+  "max_retries" : 3,
+  "created_at" : "2025-11-06T08:11:47.288598900Z",
+  "updated_at" : "2025-11-06T08:12:01.425485Z",
+  "run_at" : "2025-11-06T08:12:01.336660Z",
+  "last_error" : "exit=1\n'sleep' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n",
+  "worker_id" : "w-782d3468"
+} ]

@@ -26,3 +26,8 @@
 1762416727604:status
 1762416766073:history
 1762436254944:status
+1762508302180:queuectl enqueue '{"id":"job1","command":"sleep 2"}'
+1762508310421:enqueue '{"id":"job1","command":"sleep 2"}'
+1762508369679:queuectl enqueue '{"id":"job5","command":"sleep 2"}'
+1762508378812:enqueue '{"id":"job5","command":"sleep 2"}'
+1762508458495:enqueue '{"id":"job1","command":"sleep 2"}'

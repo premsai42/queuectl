@@ -31,3 +31,56 @@
 1762508369679:queuectl enqueue '{"id":"job5","command":"sleep 2"}'
 1762508378812:enqueue '{"id":"job5","command":"sleep 2"}'
 1762508458495:enqueue '{"id":"job1","command":"sleep 2"}'
+1762512438813:clear
+1762512647670:cd
+1762600398471:config set max_retries 3
+1762600417493:config set backoff_base 2
+1762600432366:config set job_timeout_sec 10
+1762600456183:enqueue {"id":"job1","command":"echo Hello World"}
+1762600489804:enqueue '{"id":"job1","command":"echo Hello World"}'
+1762600918778:config set max_retries 3
+1762600927905:config set backoff_base 2
+1762600934744:config set job_timeout_sec 10
+1762601067032:clear
+1762601069810:exit
+1762601126738:config set max_retries 3
+1762601134771:config set backoff_base 2
+1762601141606:config set job_timeout_sec 10
+1762601150529:enqueue '{"id":"job1","command":"echo Hello World"}'
+1762601157743:enqueue '{"id":"job11","command":"echo Hello World"}'
+1762601168837:enqueue '{"id":"job12","command":"sleep 3"}'
+1762601180580:enqueue '{"id":"job13","command":"invalid_cmd"}'
+1762601188994:worker start 3
+1762601199516:worker stop
+1762601206371:status
+1762601218959:dlq list
+1762601240816:dlq retry job13
+1762601259155:worker start 1
+1762601270180:dlq list
+1762601319539::script test-script.txt
+1762601337192:cd scripts
+1762601338625::script test-script.txt
+1762601952468:script test-script.txt
+1762601962744:cd scripts
+1762602069889:script C:\\Users\\konat\\Downloads\\queuectl-shell\\test-script.txt
+1762602105946:script C:\\Users\\konat\\Downloads\\queuectl-shell\\scripts\\test-script.txt
+1762602251611:script C:\\\\Users\\\\konat\\\\Downloads\\\\queuectl-shell\\\\scripts\\\\test-script.txt
+1762602459126:status
+1762602465606:history
+1762602488537:jobs list
+1762602494610:list jobs
+1762606021801:script C:\\\\Users\\\\konat\\\\Downloads\\\\queuectl-shell\\\\scripts\\\\test-script.txt
+1762606189398:list
+1762606195170:list jobs
+1762606207856:list pending
+1762606214509:list completed
+1762606261714:list pending
+1762606269542:list completed
+1762606308021:list failed
+1762606310750:list dead
+1762606325959:dql list
+1762606332862:list completed
+1762606340549:list pending
+1762606349532:status
+1762606355079:history
+1762606360579:exit
